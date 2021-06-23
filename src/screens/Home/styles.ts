@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-    witdh: '100%',
+    width: '100%',
     paddingHorizontal: 24,
     flexDirection: 'row',
     justifyContent: 'space-between',
