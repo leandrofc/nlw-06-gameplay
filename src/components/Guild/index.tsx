@@ -8,9 +8,9 @@ import {
 import { Feather } from '@expo/vector-icons';
 
 import { styles } from './styles';
+import { theme } from '../../global/styles/theme';
 
 import { GuildIcon } from '../GuildIcon';
-import { theme } from '../../global/styles/theme';
 
 export type GuildProps = {
   id: string;
@@ -24,7 +24,6 @@ type Props = TouchableOpacityProps & {
 }
 
 export function Guild({ data, ...rest }: Props) {
-
   return (
     <TouchableOpacity
       style={styles.container}
@@ -51,5 +50,5 @@ export function Guild({ data, ...rest }: Props) {
         size={24}
       />
     </TouchableOpacity>
-  )
+  );
 }

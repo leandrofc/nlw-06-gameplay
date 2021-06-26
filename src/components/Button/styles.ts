@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
@@ -27,6 +27,6 @@ export const styles = StyleSheet.create({
   },
   icon: {
     width: 24,
-    height: 18,
+    height: 18
   }
 });

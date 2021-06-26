@@ -1,13 +1,11 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
-
-import { SvgProps } from 'react-native-svg';
 import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
+import { LinearGradient } from 'expo-linear-gradient';
+import { SvgProps } from 'react-native-svg';
+import { View, Text } from 'react-native';
 
 import { styles } from './styles';
 import { theme } from '../../global/styles/theme';
-
 
 type Props = RectButtonProps & {
   title: string;
@@ -38,8 +36,8 @@ export function Category({
           {
             hasCheckBox &&
             <View style={
-              checked ? styles.checked : styles.check}
-            />
+              checked ? styles.checked : styles.check
+            } />
           }
 
           <Icon

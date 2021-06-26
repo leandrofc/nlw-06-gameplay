@@ -1,43 +1,41 @@
 import React from 'react';
 import { Fontisto } from '@expo/vector-icons';
 import { BorderlessButton } from 'react-native-gesture-handler';
+
 import {
   ImageBackground,
   Text,
   View,
-  FlatList,
+  FlatList
 } from 'react-native';
 
 import { theme } from '../../global/styles/theme';
 import { styles } from './styles';
 import BannerImg from '../../assets/banner.png';
 
+import { ListDivider } from '../../components/ListDivider';
 import { Background } from '../../components/Background';
 import { ListHeader } from '../../components/ListHeader';
 import { ButtonIcon } from '../../components/ButtonIcon';
-
-import { Header } from '../../components/Header';
 import { Member } from '../../components/Member';
-import { ListDivider } from '../../components/ListDivider';
+import { Header } from '../../components/Header';
 
 export function AppointmentDetails() {
   const members = [
     {
       id: '1',
-      username: 'Rodrigo',
-      avatar_url: 'https://github.com/rodrigorgtic.png',
+      username: 'Leandro',
+      avatar_url: 'https://github.com/leandrofc.png',
       status: 'online'
     },
     {
       id: '2',
-      username: 'Leandro',
-      avatar_url: 'https://github.com/leandrofc.png',
-      status: 'online'
+      username: 'Rodrigo',
+      avatar_url: 'https://github.com/rodrigorgtic.png',
+      status: 'offline'
     }
   ]
-
   return (
-
     <Background>
       <Header
         title="Detalhes"
@@ -62,13 +60,13 @@ export function AppointmentDetails() {
           </Text>
 
           <Text style={styles.subtitle}>
-            É hoje que vamos chegar ao challenger sem perder uma partida da m10
+            É hoje que vamos chegar ao challenger sem perder uma partida da md10
           </Text>
         </View>
       </ImageBackground>
 
       <ListHeader
-        title="jogadores"
+        title="Jogadores"
         subtitle="Total 3"
       />
 

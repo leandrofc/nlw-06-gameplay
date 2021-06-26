@@ -1,7 +1,6 @@
 import React from 'react';
-import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
-
 import { Text } from 'react-native';
+import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
 
 import { styles } from './styles';
 
@@ -15,10 +14,9 @@ export function Button({ title, ...rest }: Props) {
       style={styles.container}
       {...rest}
     >
-
       <Text style={styles.title}>
         {title}
       </Text>
     </RectButton>
-  )
+  );
 }

@@ -18,6 +18,7 @@ export function CategorySelect({
   setCategory,
   hasCheckBox = false,
 }: Props) {
+
   return (
     <ScrollView
       horizontal
@@ -38,5 +39,5 @@ export function CategorySelect({
         ))
       }
     </ScrollView>
-  )
+  );
 }
